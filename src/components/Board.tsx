@@ -1,18 +1,19 @@
 import "../App.css";
 
-const Square = ({ value, onClick }: any) => {
+const Square = ({ value, onClick, gameOver }: any) => {
   return (
-    <button className="square" onClick={onClick}>
+    <button className="square" onClick={onClick} disabled={gameOver}>
       {value || ""}
     </button>
   );
 };
-const Board = ({ squares, onClick }: any) => {
+const Board = ({ squares, onClick, gameOver }: any) => {
   const renderSquare = (i: any) => {
     return (
       <Square
         value={squares[Math.floor(i / 3)][i % 3]}
         onClick={() => onClick(i)}
+        gameOver={gameOver}
       />
     );
   };
