@@ -3,7 +3,27 @@ import "../App.css";
 const Square = ({ value, onClick, gameOver }: any) => {
   return (
     <button className="square" onClick={onClick} disabled={gameOver}>
-      {value || ""}
+      {value === "X" ? (
+        <span
+          style={{
+            color: "rgba(7, 183, 252, 1)",
+            textShadow: "1px 1px 3px black",
+          }}
+        >
+          X
+        </span>
+      ) : value === "O" ? (
+        <span
+          style={{
+            color: "rgba(229, 252, 7, 1)",
+            textShadow: "1px 1px 3px black",
+          }}
+        >
+          O
+        </span>
+      ) : (
+        ""
+      )}
     </button>
   );
 };

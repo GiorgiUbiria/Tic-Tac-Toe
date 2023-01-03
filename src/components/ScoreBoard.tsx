@@ -1,3 +1,5 @@
+import "../App.css";
+
 type ScoreBoardProps = {
   player1Wins: number;
   player2Wins: number;

@@ -15,6 +15,7 @@ A simple Tic-Tac-Toe game built with React v18 + TypeScript.
 * 3x3 grid for playing Tic-Tac-Toe
 * Two players: "X" and "O"
 * Keeps track of the number of wins for each player and the number of draws
+* Players exchange their playing symbols every round.
 * Game over screen with option to continue playing
 
 ## Technologies used

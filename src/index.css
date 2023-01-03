@@ -11,4 +11,5 @@ body {
   display: grid;
   place-content: center;
   font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 88, 69, 1);
 }
